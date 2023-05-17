@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 666px;
+}
+
+._mt {
+ margin-top: -228px !important;
+}
+
+.container> .header{
+    background-color: blueviolet;
+    border-radius: 3%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 17px 36px 44px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+.container> .header>h2{
+    margin: 13px;
+    font-size: 35px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.title{
+  color: purple;
+  font-size: 50px;
+  position: absolute;
+  top: 9%;
+  left: 40%;
+}
+input {
+    width: auto;
+    border: 2px solid green;
+    border-radius: 7%;
+    padding: 20px;
+    font-size: 27px !important;
+}
+
+
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .75rem 1.5rem;
+  }
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+ul>li {
+    padding: 20px 20px 10px 50px;
+    background-color: pink;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.TaskList>li.done::before {
+  content: '';
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: 23px;
+  top: 11px;
+  border-color: green;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform: rotate(38deg);
+}
+
+.TaskList>li.done {
+  background-color: #374151;
+  color: rgb(0, 255, 0);
+  text-decoration: line-through;
+}
+
+.box{
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s;
+  background: rgb(236, 98, 202);
+  border-radius: 20%;
+  box-shadow: 0 0 100px 600px rgba(117, 25, 94, 0.664);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  left: -2000px;
+}
+
